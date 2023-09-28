@@ -78,11 +78,10 @@
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
                 <version>0.5.1</version>
-                <configuration>
-                    <protocArtifact>com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}</protocArtifact>
+		<configuration>
+		    <protocExecutable>/usr/local/bin/protoc-3.5.1</protocExecutable>
                     <pluginId>grpc-java</pluginId>
-                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}
-                    </pluginArtifact>
+		    <pluginExecutable>/usr/local/bin/protoc-gen-grpc-java</pluginExecutable>
                 </configuration>
                 <executions>
                     <execution>
